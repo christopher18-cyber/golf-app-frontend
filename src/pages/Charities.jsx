@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { getAllCharitiesApi } from "../services/charityService";
+// import { getAllCharitiesApi } from "../services/charityService";
+import { getAllCharitiesApi } from "../services/charityService.js";
 
 export default function Charities() {
 	const [charities, setCharities] = useState([]);

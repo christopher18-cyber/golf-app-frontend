@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { useAuth } from "../context/AuthContext";
-import { getMyWinningsApi, uploadProofApi } from "../services/winnerService";
+import { useAuth } from "../context/AuthContext.jsx";
+import { getMyWinningsApi, uploadProofApi } from "../services/winnerService.js";
 import { Link } from "react-router-dom";
 
 export default function Winners() {

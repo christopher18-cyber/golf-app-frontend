@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { useAuth } from "../context/AuthContext";
-import { getMyProfileApi, updatePlanApi } from "../services/userService";
-import { getAllCharitiesApi } from "../services/charityService";
-import { updateCharitySelectionApi } from "../services/userService";
+import { useAuth } from "../context/AuthContext.jsx";
+import { getMyProfileApi, updatePlanApi } from "../services/userService.js";
+import { getAllCharitiesApi } from "../services/charityService.js";
+import { updateCharitySelectionApi } from "../services/userService.js";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function UserProfile() {

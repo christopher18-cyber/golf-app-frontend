@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getPublishedDrawsApi } from "../services/drawService";
+import { getPublishedDrawsApi } from "../services/drawService.js";
 import { Link } from "react-router-dom";
 
 export default function Draws() {

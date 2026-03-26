@@ -226,7 +226,7 @@ export default function AdminDashboard() {
 								/>
 								<input
 									type='text'
-									placeholder='Image URL (optional)'
+									placeholder='Image URL'
 									value={charityForm.image_url}
 									onChange={(e) =>
 										setCharityForm({

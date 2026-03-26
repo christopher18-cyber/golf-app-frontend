@@ -30,7 +30,7 @@ export default function Home() {
 							</Link>
 							<Link
 								to='/charities'
-								className='text-gray-400 hover:text-white transition'>
+								className='bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-lg font-semibold transition'>
 								Charities
 							</Link>
 						</>

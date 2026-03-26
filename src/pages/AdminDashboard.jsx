@@ -6,6 +6,7 @@ import {
 	getAllCharitiesApi,
 	addCharityApi,
 	deleteCharityApi,
+	publishDrawApi,
 } from "../services/charityService.js";
 import {
 	getAllDrawsApi,

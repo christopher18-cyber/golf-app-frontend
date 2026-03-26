@@ -1,5 +1,4 @@
 import axios from "axios";
-
 const BASE_URL = import.meta.env.VITE_API_URL;
 
 export async function getMyWinningsApi(token) {
@@ -18,7 +17,9 @@ export async function uploadProofApi(id, data, token) {
 		const response = await axios.put(
 			`${BASE_URL}/winners/upload-proof/${id}`,
 			data,
-			{ headers: { Authorization: `Bearer ${token}` } },
+			{
+				headers: { Authorization: `Bearer ${token}` },
+			},
 		);
 		return response?.data;
 	} catch (err) {
@@ -28,7 +29,7 @@ export async function uploadProofApi(id, data, token) {
 
 export async function getAllWinnersApi(token) {
 	try {
-		const response = await axios.get(`${BASE_URL}/winners`, {
+		const response = await axios.get(`${BASE_URL}/winners/get-all-winners`, {
 			headers: { Authorization: `Bearer ${token}` },
 		});
 		return response?.data;
@@ -53,7 +54,9 @@ export async function markAsPaidApi(id, token) {
 		const response = await axios.put(
 			`${BASE_URL}/winners/mark-paid/${id}`,
 			{},
-			{ headers: { Authorization: `Bearer ${token}` } },
+			{
+				headers: { Authorization: `Bearer ${token}` },
+			},
 		);
 		return response?.data;
 	} catch (err) {

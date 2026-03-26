@@ -1,5 +1,4 @@
 import axios from "axios";
-
 const BASE_URL = import.meta.env.VITE_API_URL;
 
 export async function getMyProfileApi(token) {
@@ -15,7 +14,7 @@ export async function getMyProfileApi(token) {
 
 export async function updateCharitySelectionApi(data, token) {
 	try {
-		const response = await axios.put(`${BASE_URL}/users/charity`, data, {
+		const response = await axios.put(`${BASE_URL}/users/select-charity`, data, {
 			headers: { Authorization: `Bearer ${token}` },
 		});
 		return response?.data;
@@ -26,7 +25,7 @@ export async function updateCharitySelectionApi(data, token) {
 
 export async function updatePlanApi(data, token) {
 	try {
-		const response = await axios.put(`${BASE_URL}/users/plan`, data, {
+		const response = await axios.put(`${BASE_URL}/users/select-plan`, data, {
 			headers: { Authorization: `Bearer ${token}` },
 		});
 		return response?.data;

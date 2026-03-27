@@ -101,11 +101,11 @@ export default function Dashboard() {
 		<div className='min-h-screen bg-gray-950 text-white'>
 			{/* Navbar */}
 			<nav className='bg-gray-900 border-b border-gray-800 px-6 py-4 flex items-center justify-between'>
-				<h1 className='text-xl font-bold text-green-500'>GolfCharity</h1>
+				<h1 className='text-wrap font-bold text-green-500'>GolfCharity</h1>
 				<div className='flex items-center gap-2'>
 					<p className='text-gray-400 text-sm hidden md:block'>{user?.email}</p>
 				</div>
-				<div className='flex items-center gap-4'>
+				<div className='flex items-center gap-3'>
 					<Link
 						to='/scores'
 						className='text-gray-400 hover:text-white text-sm transition'>

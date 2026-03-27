@@ -102,13 +102,8 @@ export default function Dashboard() {
 			{/* Navbar */}
 			<nav className='bg-gray-900 border-b border-gray-800 px-6 py-4 flex items-center justify-between'>
 				<h1 className='text-xl font-bold text-green-500'>GolfCharity</h1>
-				<div className='flex items-center gap-4'>
+				<div className='flex items-center gap-2'>
 					<p className='text-gray-400 text-sm hidden md:block'>{user?.email}</p>
-					<button
-						onClick={handleLogout}
-						className='text-sm text-gray-400 hover:text-white transition'>
-						Logout
-					</button>
 				</div>
 				<div className='flex items-center gap-4'>
 					<Link
